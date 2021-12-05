@@ -1,10 +1,17 @@
 .homeContainer {
-  min-width: 100vw;
-  height: var(--app-height);
-  min-height: var(--app-height);
-  max-height: var(--app-height);
+  padding: 48px 30px;
+  min-width: calc(100% - 60px);
+  height: calc(var(--app-height) - 96px);
+  min-height: calc(var(--app-height) - 96px);
+  max-height: calc(var(--app-height) - 96px);
   background-color: #584f50;
   overflow-y: scroll;
+
+  &::-webkit-scrollbar {
+    display: none;
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
+  }
 
   .centeredWrapper {
     margin: 60px auto;

@@ -1,15 +1,13 @@
 .homeContainer {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   min-width: 100vw;
   height: var(--app-height);
   min-height: var(--app-height);
+  max-height: var(--app-height);
   background-color: #584f50;
-  overflow-x: scroll;
-  padding: 49px 0;
+  overflow-y: scroll;
 
   .centeredWrapper {
+    margin: 60px 24px;
     max-width: 520px;
     min-width: 520px;
 

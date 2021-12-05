@@ -1,0 +1,66 @@
+.secondStepContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+  border-radius: 8px;
+  background-color: white;
+  box-shadow: 5px 5px 15px 1px rgb(39, 39, 39);
+
+  h1 {
+    font-size: 24px;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 24px;
+
+    @media screen and (max-width: 768px) {
+      max-width: 200px;
+    }
+  }
+
+  .inputWrapper {
+    margin-bottom: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    input {
+      width: 50px;
+      height: 25px;
+      outline: none;
+      border: 1px solid rgb(201, 200, 200);
+      border-radius: 10px;
+      padding: 0 12px;
+      font-size: 16px;
+      font-weight: 600;
+      color: rgb(65, 65, 65);
+      margin-right: 24px;
+
+      &.error {
+        border: 1px solid rgb(240, 89, 89);
+      }
+    }
+
+    span {
+      color: rgb(65, 65, 65);
+      font-size: 16px;
+      font-weight: 600;
+    }
+  }
+
+  button {
+    height: 50px;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    color: white;
+    background-color: rgb(47, 180, 113);
+    min-width: 200px;
+    cursor: pointer;
+
+    &.error {
+      background-color: rgb(240, 89, 89);
+    }
+  }
+}

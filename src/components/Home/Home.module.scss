@@ -1,0 +1,22 @@
+.homeContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 100vw;
+  height: var(--app-height);
+  min-height: var(--app-height);
+  background-color: #584f50;
+
+  .centeredWrapper {
+    max-width: 520px;
+    min-width: 520px;
+
+    @media screen and (max-width: 768px) {
+      min-width: 230px;
+    }
+
+    .stepWrapper {
+      min-height: 320px;
+    }
+  }
+}
